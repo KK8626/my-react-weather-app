@@ -1,0 +1,11 @@
+.App {
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.App footer {
+  font-size: 10px;
+}
+.App a {
+  text-decoration: none;
+}
