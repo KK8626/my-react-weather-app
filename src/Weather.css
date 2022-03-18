@@ -6,9 +6,8 @@
 }
 
 .Weather h1 {
-  font-size: 40px;
+  font-weight: 500;
 }
-
 .Weather ul {
   list-style: none;
   padding: 0px;
@@ -20,24 +19,28 @@
   padding-left: 0px;
   padding-top: 6px;
 }
+.Weather li {
+  font-size: 15px;
+}
 
 .Weather img {
   display: inline-block;
-  height: 64px;
-  margin-right: 10px;
+  height: 50px;
+  margin-right: 5px;
   vertical-align: top;
-  width: 64px;
+  width: 50px;
   padding-bottom: 5px;
   line-height: 1;
 }
 
 .Weather .temperature {
   display: inline;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1;
 }
 
 .Weather .unit {
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
+  font-size: 15px;
 }
