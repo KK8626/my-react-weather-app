@@ -1,7 +1,15 @@
-import React from "react";
+import React  from "react";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
+  //const [city, setCity] = useState(props.defaultCity);
+  //const [loaded, setLoaded] = useState(false);
+  let apiKey = "eb9542c65e739e0fb25ade97c749e2aa";
+  let city = props.defaultCity;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  
+  
+  //conditional Rendering: if data is loaded, show it; if not make api call
   return (
     <div className="Weather">
       <div className="row">
@@ -23,7 +31,7 @@ export default function Weather() {
           />
         </div>
       </div>
-      <h1 className="city mt-3 fw-bold">New York</h1>
+      <h1 className="city mt-3 fw-bold">{props.defaultCity}</h1>
       <ul>
         <li className="date">Friday 11:00</li>
         <li className="description">Mist</li>
@@ -46,4 +54,6 @@ export default function Weather() {
       </div>
     </div>
   );
+
+  
 }
