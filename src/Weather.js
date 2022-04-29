@@ -14,7 +14,7 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       humidity: response.data.main.humidity,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/fog.png",
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
     });
@@ -28,7 +28,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    search(city);
   }
 
   function handleCityChange(event) {
