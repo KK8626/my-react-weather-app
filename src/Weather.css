@@ -21,12 +21,12 @@
   padding-top: 6px;
 }
 
-.Weather img {
+.Weather canvas {
   display: inline-block;
-  height: 64px;
+  height: 60px;
   margin-right: 10px;
   vertical-align: top;
-  width: 64px;
+  width: 60px;
   padding-bottom: 5px;
   line-height: 1;
 }
