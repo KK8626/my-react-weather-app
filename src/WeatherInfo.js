@@ -9,17 +9,14 @@ export default function WeatherInfo(props) {
         <li>
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="description text-capitalize">
+        <li className="text-capitalize description">
           {props.data.description}
         </li>
       </ul>
       <div className="row mt-4">
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt="Sunny"
-          />
-          <span className="temperature">{props.data.temperature}</span>
+          <img src={props.data.iconUrl} alt={props.data.description} />
+          <span className="temperature fw-bold">{props.data.temperature}</span>
           <span className="unit fw-bold">°C</span>
         </div>
         <div className="col-6">
