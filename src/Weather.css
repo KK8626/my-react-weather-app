@@ -23,10 +23,8 @@
 
 .Weather canvas {
   display: inline-block;
-  height: 60px;
   margin-right: 12px;
   vertical-align: top;
-  width: 60px;
   padding-bottom: 5px;
   line-height: 1;
 }
@@ -47,4 +45,3 @@
   text-decoration: none;
   color: #0d6efd;
 }
-
