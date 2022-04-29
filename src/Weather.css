@@ -42,3 +42,9 @@
   position: relative;
   bottom: 30px;
 }
+
+.Weather a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
