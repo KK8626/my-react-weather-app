@@ -3,6 +3,10 @@ import "./Weather.css";
 import FormattedDate from "./FormattedDate.js";
 import axios from "axios";
 import "./Weather.css";
+<<<<<<< HEAD
+=======
+import WeatherInfo from "./WeatherInfo";
+>>>>>>> parent of 119bd33 (Created basic structure for 1-day-forecast)
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -49,6 +53,7 @@ export default function Weather(props) {
             />
           </div>
         </div>
+<<<<<<< HEAD
         <h1 className="city mt-3 fw-bold">{city}</h1>
         <ul>
           <li>
@@ -74,6 +79,9 @@ export default function Weather(props) {
             </ul>
           </div>
         </div>
+=======
+        <WeatherInfo data={weatherData} />
+>>>>>>> parent of 119bd33 (Created basic structure for 1-day-forecast)
       </div>
     );
   } else {
