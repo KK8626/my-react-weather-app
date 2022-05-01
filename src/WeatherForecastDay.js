@@ -20,6 +20,7 @@ export default function WeatherForecastDay(props) {
 
     return days[day];
   }
+
   return (
     <div>
       <div className="WeatherForecast-day">{day()}</div>
