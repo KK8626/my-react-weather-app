@@ -1,12 +1,9 @@
 .App {
-  margin: 30px auto;
   max-width: 600px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px auto;
 }
 
 .App footer {
-  font-size: 10px;
-}
-.App a {
-  text-decoration: none;
+  font-size: 11px;
+  margin: 10px 0;
 }
